@@ -23,9 +23,9 @@ This project simulates an individual’s expense tracker using the Faker library
 - **Database Setup:** Design a SQL database schema and populate it with the generated data for easy querying.
 - **Exploratory Data Analysis (EDA):** Use Python tools to explore the data and uncover spending behaviors and trends.
 - **Streamlit Application:** Build an intuitive web app to display visualizations and results from SQL queries.
-## Demo
+## Streamlit App Link
 
-https://github.com/SSaranya19/Expenses_Tracker_Streamlit_App_Project/blob/main/Streamlit_App/Expenses_Tracker_Streamlit_App-Screenrecord.webm
+
 
 
 ## Technical Tags
