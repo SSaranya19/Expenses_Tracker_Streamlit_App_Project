@@ -25,7 +25,7 @@ This project simulates an individual’s expense tracker using the Faker library
 - **Streamlit Application:** Build an intuitive web app to display visualizations and results from SQL queries.
 ## Streamlit App Link
 
-
+https://expenses-tracker-app-project.streamlit.app/
 
 
 ## Technical Tags
