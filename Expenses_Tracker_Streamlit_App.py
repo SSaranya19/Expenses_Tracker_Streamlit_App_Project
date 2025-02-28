@@ -401,16 +401,13 @@ chart_options = [
     "What is the category-wise highest spending per month?",
     "What is the total amount spent in each category?",
     "What is the total amount spent using each payment mode?",
-    #"Q3. What is the total cashback received across all transactions?",
     "Which are the top 5 most expensive categories in terms of spending?",
     "How much was spent on transportation using different payment modes?",
     "Which transactions resulted in cashback?",
     "What is the total spending in each month of the year?",
     "Which months have the highest spending in categories like 'Travel,' 'Entertainment,' or 'Gifts'?",
     "How much cashback or rewards were earned in each month?",
-    "How has your overall spending changed over time (e.g., increasing, decreasing, remaining stable)?",
-    "Define High and Low Priority Categories",
-    #"Q12. Which category contributes the highest percentage of the total spending?"
+    "Define High and Low Priority Categories"
 ]
 selected_charts = st.sidebar.multiselect("Select a query to display charts:", options=chart_options)
 
@@ -553,13 +550,6 @@ for chart in selected_charts:
         st.subheader("Monthly Cashback/Rewards")
         fig = px.line(df, x='Month', y='Total_cashback',
                   labels={'Month': 'Month', 'Total_cashback': 'Cashback'},
-                  markers=True)
-        st.plotly_chart(fig)
-
-    if chart == "How has your overall spending changed over time (e.g., increasing, decreasing, remaining stable)?":
-        st.subheader("Overall Spending Trend")
-        fig = px.line(df, x='Year_of_Month', y='Total_Spent',
-                  labels={'Year_of_Month': 'Month', 'Total_Spent': 'Spending'},
                   markers=True)
         st.plotly_chart(fig)
 
